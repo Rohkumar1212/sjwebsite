@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mark Sheet Form</title>
+<link rel="icon" href="images/Favicon.svg" />
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+<link rel="stylesheet" href="fonts/icomoon/style.css">
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+<link rel="stylesheet" href="css/aos.css">
+<link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="css/style.css">
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.mark-sheet {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.total {
+    margin-top: 20px;
+    text-align: right;
+}
+
+</style>
+</head>
+<body>
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Mark Sheet</title>
+      <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+      <div class="mark-sheet">
+          <div class="header">
+              <h1>Mark Sheet</h1>
+              <p>Student Name: John Doe</p>
+              <p>Roll Number: 123456</p>
+          </div>
+          <table>
+              <tr>
+                  <th>Subject</th>
+                  <th>Marks Obtained</th>
+              </tr>
+              <tr>
+                  <td>Mathematics</td>
+                  <td>85</td>
+              </tr>
+              <tr>
+                  <td>Science</td>
+                  <td>78</td>
+              </tr>
+              <tr>
+                  <td>English</td>
+                  <td>92</td>
+              </tr>
+              <!-- Add more subjects here -->
+          </table>
+          <div class="total">
+              <p>Total Marks Obtained: 255</p>
+          </div>
+      </div>
+  </body>
+  </html>
+  
+<form id="markSheetForm">
+    <label for="rollNumber">Roll Number:</label>
+    <input type="text" id="rollNumber" name="rollNumber">
+    <br>
+    <label for="studentID">Student ID:</label>
+    <input type="text" id="studentID" name="studentID">
+    <br>
+    <button type="button" onclick="fetchMarkSheet()">Fetch Mark Sheet</button>
+</form>
+
+<script>
+function fetchMarkSheet() {
+    var rollNumber = document.getElementById("rollNumber").value;
+    var studentID = document.getElementById("studentID").value;
+
+    // Make an AJAX request to fetch marksheet data
+    // Assuming you have a backend endpoint to fetch data
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "/api/marksheet?rollNumber=" + rollNumber + "&studentID=" + studentID, true);
+    xhr.onreadystatechange = function () {
+        if (xhr.readyState === 4 && xhr.status === 200) {
+            var markSheetData = JSON.parse(xhr.responseText);
+            // Assuming markSheetData contains fields like name, subject, marks, etc.
+            // Fill input boxes with the fetched data
+            document.getElementById("name").value = markSheetData.name;
+            document.getElementById("subject").value = markSheetData.subject;
+            document.getElementById("marks").value = markSheetData.marks;
+            // Continue for other fields
+        }
+    };
+    xhr.send();
+}
+</script>
+
+</body>
+</html>

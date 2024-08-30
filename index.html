@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>SJ University</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/Favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .modal-body {
+      h1 {
+        font-weight: 900;
+        font-size: 2.3em;
+        text-transform: uppercase;
+      }
+
+      a.pre-order-btn {
+        color: #000;
+        background-color: rgb(5, 124, 67);
+        border-radius: 1em;
+        padding: 1em;
+        display: block;
+        margin: 2em auto;
+        width: 50%;
+        font-size: 1.25em;
+        font-weight: 6600;
+
+        &:hover {
+          background-color: #9b8f8f;
+          text-decoration: none;
+          color: rgb(11, 141, 174);
+        }
+      }
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!--         <h4 class="modal-title">Modal Header</h4> -->
+        </div>
+        <div class="modal-body text-center">
+          <img class="popuplogo" src="./images/Footer-logo.png" />
+
+          <form id="myform">
+            <div class="row gy-1 gy-xl-2 p-2 p-xl-2">
+              <div class="col-12 col-md-6">
+                <label for="name" class="form-label">Full Name <span class="text-danger">*</span></label>
+
+                <div class="input-group"> <span class="input-group-text">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" id="Layer_1" data-name="Layer 1"
+                      viewBox="0 0 24 24">
+                      <path
+                        d="m9,12c-3.309,0-6-2.691-6-6S5.691,0,9,0s6,2.691,6,6-2.691,6-6,6Zm12.5,2h-6c-1.378,0-2.5,1.121-2.5,2.5v7.5h11v-7.5c0-1.379-1.122-2.5-2.5-2.5Zm-1.5,5h-3v-2h3v2Zm-9-3.255l-2,2.25-3.551-3.995h-.449c-2.757,0-5,2.243-5,5v5h11v-8.255Z" />
+                    </svg>
+
+                  </span><input type="text" class="form-control" id="name" name="name" required>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="mobile" class="form-label">Phone Number <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"
+                      width="20" height="20">
+                      <path
+                        d="M0,12c0,6.617,5.383,12,12,12s12-5.383,12-12C24,5.383,18.617,0,12,0S0,5.383,0,12Zm5-3.11c0-.826,.298-1.654,.928-2.283l1.607-1.607,3.164,3.164-2.071,2.071c1.029,2.561,2.772,4.234,5.137,5.137l2.071-2.071,3.164,3.164-1.607,1.607c-.629,.63-1.457,.928-2.283,.928-4.24,0-10.11-5.544-10.11-10.11Z" />
+                    </svg>
+
+                  </span>
+                  <input type="text" class="form-control" id="mobile" name="mobile">
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="subject" class="form-label">Subject <span class="text-danger">*</span></label>
+
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"
+                      width="20" height="20">
+                      <path
+                        d="m16,8.727v6.086l-3,.86v-6.256c0-.463.312-.877.757-1.006l1.316-.381c.221-.064.453-.021.637.117.185.138.29.35.29.58Zm-5.757-.316l-1.316-.381c-.223-.064-.453-.021-.637.117-.185.138-.29.35-.29.58v6.086l3,.86v-6.256c0-.463-.312-.877-.757-1.006Zm13.757,3.589c0,6.617-5.383,12-12,12S0,18.617,0,12,5.383,0,12,0s12,5.383,12,12Zm-6-3.273c0-.865-.396-1.659-1.088-2.179-.691-.52-1.563-.679-2.396-.439l-1.316.381c-.456.132-.863.367-1.2.674-.337-.307-.744-.542-1.2-.674l-1.316-.381c-.833-.239-1.704-.081-2.396.439-.691.52-1.088,1.313-1.088,2.179v7.594l6,1.72,6-1.72v-7.594Z" />
+                    </svg>
+                  </span>
+                  <input type="text" class="form-control" id="subject" name="subject" required>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" id="Layer_1" data-name="Layer 1"
+                      viewBox="0 0 24 24" width="512" height="512">
+                      <path
+                        d="M11.021,10.591l-2.591-2.591,7.164-.006-2.597,2.597c-.527,.527-1.448,.527-1.976,0Zm12.979,1.409c0,6.617-5.383,12-12,12S0,18.617,0,12,5.383,0,12,0s12,5.383,12,12Zm-5.007-3.007c0-.458-.111-.887-.295-1.276l.009-.009-.032-.032c-.293-.593-.772-1.073-1.365-1.365l-.017-.017-.005,.005c-.394-.19-.83-.306-1.296-.306l-7.992,.007c-.458,0-.887,.111-1.275,.295h-.001l-.004,.003c-1.013,.482-1.72,1.508-1.72,2.702v8l13.993-.008v-8Zm-6.984,4.007c-.907,0-1.761-.354-2.402-.995l-2.606-2.607v5.601l9.993-.006v-5.572l-2.583,2.583c-.641,.642-1.494,.995-2.401,.995Z" />
+                    </svg>
+
+                  </span>
+                  <input type="email" class="form-control" id="email" name="email" value="" required>
+                </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="service" class="form-label">Service <span class="text-danger">*</span></label>
+                <div class="input-group">
+                  <span class="input-group-text">
+                    <?xml version="1.0" encoding="UTF-8"?>
+                    <svg xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 24 24"
+                      width="20" height="20">
+                      <path
+                        d="m11,9.417v7.583l-5-1.434v-6.84c0-1.149,1.102-1.977,2.205-1.658l1.316.381c.876.253,1.479,1.055,1.479,1.967Zm4.795-2.348l-1.316.381c-.876.253-1.479,1.055-1.479,1.967v7.583l5-1.434v-6.84c0-1.149-1.102-1.977-2.205-1.658Zm8.205,4.931c0,6.617-5.383,12-12,12S0,18.617,0,12,5.383,0,12,0s12,5.383,12,12Zm-3,0c0-4.962-4.037-9-9-9S3,7.038,3,12s4.037,9,9,9,9-4.037,9-9Z" />
+                    </svg>
+
+                  </span>
+                  <input type="text" class="form-control" id="service" name="service" value="" required>
+                 </div>
+              </div>
+              <div class="col-12 col-md-6">
+                <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
+                <textarea class="form-control" id="text" name="text" rows="3" required></textarea>
+              </div>
+              <div class="col-12">
+                <div class="d-grid mt-2">
+                  <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <!--         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="site-wrap">
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    <!-- top header  -->
+    <div class="py-2 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3 mrq mrq-mobile">
+            <a class="small btn btn-primary px-4 py-2" href="#"><span class="icon-linkedin"></span></a>
+            <a class="small btn btn-primary px-4 py-2" href="#"><span class="icon-facebook"></span></a>
+            <a class="small btn btn-primary px-4 py-2"
+              href="https://api.whatsapp.com/send?phone=9876543210&text=Can%20I%20know%20more%20about%20your%20service.."><span
+                class="icon-whatsapp"></span></a>
+            <!-- <a href="#"><span class="icon-linkedin"></span></a> -->
+          </div>
+          <div class="col-lg-6 mrq mrq-mobile text-right">
+            <marquee>The university has a good placement record and hence supports you to have good internship and
+              placement opportunities.</marquee>
+          </div>
+          <div class="col-lg-3 mrq text-right">
+            <a href="login.html" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>
+            <a href="register.html" class="small btn btn-primary px-4 py-2"><span class="icon-users"></span>
+              Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header  -->
+    <header class="site-navbar py-1 js-sticky-header site-navbar-target" role="banner">
+      <div class="container height">
+        <div class="d-flex align-items-center height-100%">
+          <div class="site-logo">
+            <a href="index.html" class="d-block">
+              <img src="images/Header-logo.png" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="mr-auto">
+            <nav class="site-navigation position-relative text-left" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li class="active">
+                  <a href="index.html" class="nav-link text-left">Home</a>
+                </li>
+                <li>
+                  <a href="about.html" class="nav-link text-left">About Us</a>
+                </li>
+                <li>
+                  <a href="admissions.html" class="nav-link text-left">Admissions</a>
+                </li>
+                <li>
+                  <a href="courses.html" class="nav-link text-left">Courses</a>
+                </li>
+                <li>
+                  <a href="result.html" class="nav-link text-left">Results</a>
+                </li>
+                <li>
+                <li class="has-children">
+                  <a href="verification.html" class="nav-link text-left">Verification</a>
+                  <ul class="dropdown">
+                    <li><a href="email-verification.html">Email</a></li>
+                    <li><a href="rti-verification.html">RTI</a></li>
+                    <li><a href="company-corporate.html">Company/Corporate</a></li>
+                    <li><a href="govt-department.html">Govt Department </a></li>
+                    <li><a href="letter-postal.html">Letter postal</a></li>
+                    <li><a href="foreign.html">Foreign</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="contact.html" class="nav-link text-left">Contact Us</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="nav-link text-left btn btn-success">Call to Action</a>
+                </li>
+              </ul>
+              </ul>
+            </nav>
+          </div>
+          <div class="ml-auto">
+            <div class="social-wrap">
+              <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle togglebtn text-black"><span
+                  class="icon-menu h3"></span></a>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header  -->
+
+    <!-- Banner  -->
+    <div class="hero-slide owl-carousel site-blocks-cover">
+      <div class="intro-section" style="background-image: url('images/banner\ Image.webp');">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12 mx-auto text-center text-uppercase" data-aos="fade-up">
+              <h1>SJ University</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="intro-section" style="background-image: url('images/banner\ Image1.webp');">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-12 mx-auto text-center" data-aos="fade-up">
+              <h1>You Can Learn Anything</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Banner  -->
+
+    <!-- Card  -->
+    <div class="site-section">
+      <div class="container">
+        <div class="row mb-5 justify-content-center text-center">
+          <div class="col-lg-4 mb-3">
+            <h2 class="section-title-underline mb-5">
+              <span>Why SJ University</span>
+            </h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="feature-1 border">
+              <div class="icon-wrapper bg-primary">
+                <span class="flaticon-mortarboard text-white"></span>
+              </div>
+              <div class="feature-1-content">
+                <h2>Personalize Learning</h2>
+                <p>Personalized learning is an educational approach that aims to customize learning for each student's
+                  strengths, needs, skills, and interests. </p>
+                <p><a href="/academics-master/about.html" class="btn btn-primary px-4 rounded-0">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="feature-1 border">
+              <div class="icon-wrapper bg-primary">
+                <span class="flaticon-school-material text-white"></span>
+              </div>
+              <div class="feature-1-content">
+                <h2>Trusted Courses</h2>
+                <p>A well-known platform that offers high-quality courses, specializations, and degree programs with top
+                  universities and organizations.</p>
+                <p><a href="/academics-master/about.html" class="btn btn-primary px-4 rounded-0">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+            <div class="feature-1 border">
+              <div class="icon-wrapper bg-primary">
+                <span class="flaticon-library text-white"></span>
+              </div>
+              <div class="feature-1-content">
+                <h2>Tools for Students</h2>
+                <p>A well-known platform that helps students study new languages by learning words and grammar in
+                  different groups.</p>
+                <p><a href="/academics-master/about.html" class="btn btn-primary px-4 rounded-0">Learn More</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Card  -->
+
+    <!-- Courses -->
+    <div class="site-section">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-lg-6">
+            <h2 class="section-title-underline mb-3">
+              <span>Popular Courses</span>
+            </h2>
+            <p>SJ University provides high-quality courses.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="owl-slide-3 owl-carousel">
+              <div class="course-1-item">
+                <figure class="thumnail">
+                  <a href="course-single.html"><img src="images/MTech.jpg" alt="Image" class="img-fluid1"></a>
+                  <div class="category">
+                    <h3>M.Tech.</h3>
+                  </div>
+                </figure>
+                <div class="course-1-content pb-4">
+                  <div class="rating text-center mb-3">
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="course-1-item">
+                <figure class="thumnail">
+                  <a href="course-single.html"><img src="images/MCA Image.jpg" alt="Image" class="img-fluid1"></a>
+                  <div class="category">
+                    <h3>M.C.A.</h3>
+                  </div>
+                </figure>
+                <div class="course-1-content pb-4">
+                  <div class="rating text-center mb-3">
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="course-1-item">
+                <figure class="thumnail">
+                  <a href="course-single.html"><img src="images/MSc.jpg" alt="Image" class="img-fluid1"></a>
+                  <div class="category">
+                    <h3>M.Sc.</h3>
+                  </div>
+                </figure>
+                <div class="course-1-content pb-4">
+                  <div class="rating text-center mb-3">
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="course-1-item">
+                <figure class="thumnail">
+                  <a href="course-single.html"><img src="images/BTech.jpg" alt="Image" class="img-fluid1"></a>
+                  <div class="category">
+                    <h3>B.Tech.</h3>
+                  </div>
+                </figure>
+                <div class="course-1-content pb-4">
+                  <div class="rating text-center mb-3">
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="course-1-item">
+                <figure class="thumnail">
+                  <a href="course-single.html"><img src="images/BCA.jpg" alt="Image" class="img-fluid1"></a>
+                  <div class="category">
+                    <h3>B.C.A.</h3>
+                  </div>
+                </figure>
+                <div class="course-1-content pb-4">
+                  <div class="rating text-center mb-3">
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                  </div>
+                </div>
+              </div>
+              <div class="course-1-item">
+                <figure class="thumnail">
+                  <a href="course-single.html"><img src="images/PL Image.jpg" alt="Image" class="img-fluid1"></a>
+                  <div class="category">
+                    <h3>B.Sc.</h3>
+                  </div>
+                </figure>
+                <div class="course-1-content pb-4">
+                  <div class="rating text-center mb-3">
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                    <span class="icon-star2 text-warning"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Courses -->
+
+    <!-- About  -->
+    <div class="section-bg style-1" style="background-image: url('images/about_1.jpg');">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h2 class="section-title-underline style-2">
+              <span>About Our University</span>
+            </h2>
+            <img src="images/Student Image2.jpg" alt="Image" class="img-fluid-2">
+          </div>
+          <div class="col-lg-8">
+            <p class="lead">Our University named after Dr. Shrikant Jichkar follows his philanthropy.</p>
+            <p>Shrikant Jichkar (14 September 1954 – 2 June 2004) was an Indian central civil servant and politician. He
+              obtained 20 university degrees and was elected the youngest Member of the Legislative Assembly in the
+              country at the age of 26.</p>
+            <p><a href="about.html">Read more</a></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- About  -->
+
+    <!-- Professor -->
+    <div class="site-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <h2 class="section-title-underline ">
+              <span>Testimonials</span>
+            </h2>
+          </div>
+        </div>
+        <div class="owl-slide owl-carousel">
+          <div class="ftco-testimonial-1">
+            <div class="ftco-testimonial-vcard d-flex align-items-center mb-3">
+              <img src="images/person_1.jpg" alt="Image" class="img-fluid mr-3">
+              <div>
+                <h3>Rajeev Kumar Dubey </h3>
+                <span>Science Professor</span>
+              </div>
+            </div>
+            <div>
+              <p>"Studying at SJ UNIVERSITY has been an enriching journey. The supportive faculty and diverse student
+                community made my learning experience truly exceptional."</p>
+            </div>
+          </div>
+          <div class="ftco-testimonial-1">
+            <div class="ftco-testimonial-vcard d-flex align-items-center mb-3">
+              <img src="images/person_2.jpg" alt="Image" class="img-fluid mr-3">
+              <div>
+                <h3>Archna Ahirwar</h3>
+                <span>Mathematics Professor</span>
+              </div>
+            </div>
+            <div>
+              <p>"Choosing SJ UNIVERSITY was one of the best decisions I made. The top-notch facilities and innovative
+                teaching methods helped me excel academically and grow personally."</p>
+            </div>
+          </div>
+          <div class="ftco-testimonial-1">
+            <div class="ftco-testimonial-vcard d-flex align-items-center mb-3">
+              <img src="images/person_3.jpg" alt="Image" class="img-fluid mr-3">
+              <div>
+                <h3>Dr. Anand Shukla </h3>
+                <span>Economics Professor</span>
+              </div>
+            </div>
+            <div>
+              <p>"I am grateful for the opportunities SJ UNIVERSITY provided me. From research projects to internships,
+                I gained practical skills that prepared me for success in the real world."</p>
+            </div>
+          </div>
+          <div class="ftco-testimonial-1">
+            <div class="ftco-testimonial-vcard d-flex align-items-center mb-3">
+              <img src="images/person_4.jpg" alt="Image" class="img-fluid mr-3">
+              <div>
+                <h3>Dr Lila Simon</h3>
+                <span>Finance Professor</span>
+              </div>
+            </div>
+            <div>
+              <p>"Attending SJ UNIVERSITY was a transformative experience. The inclusive environment fostered my
+                intellectual curiosity and encouraged me to think critically about the world around me."</p>
+            </div>
+          </div>
+          <div class="ftco-testimonial-1">
+            <div class="ftco-testimonial-vcard d-flex align-items-center mb-3">
+              <img src="images/person_5.jpg" alt="Image" class="img-fluid mr-3">
+              <div>
+                <h3>Dr. Sunil Kumar </h3>
+                <span>Physics Professor</span>
+              </div>
+            </div>
+            <div>
+              <p>"I can't speak highly enough about SJ UNIVERSITY. The dedicated professors, vibrant campus life, and
+                endless possibilities for extracurricular involvement made my time here truly unforgettable."</p>
+            </div>
+          </div>
+          <div class="ftco-testimonial-1">
+            <div class="ftco-testimonial-vcard d-flex align-items-center mb-3">
+              <img src="images/person_6.jpg" alt="Image" class="img-fluid mr-3">
+              <div>
+                <h3>Smita Agarwal</h3>
+                <span>Art Professor</span>
+              </div>
+            </div>
+            <div>
+              <p>"I will always cherish the memories I made at SJ UNIVERSITY. The friendships I formed and the knowledge
+                I gained have shaped me into the person I am today. Thank you, SJ UNIVERSITY, for an incredible
+                journey."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Professor -->
+
+    <!-- Block -->
+    <div class="section-bg style-1" style="background-image: url('images/hero_1.jpg');">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 mb-3 mb-lg-0">
+            <span class="icon flaticon-mortarboard"></span>
+            <h3>Our Philosphy</h3>
+            <p>Philosophy is the study of the human experience using logic and reason. It can help students develop
+              critical thinking, clear writing, and logical analysis skills. These skills can be useful in many
+              professions, including law, medicine, and global health work.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3 mb-lg-0">
+            <span class="icon flaticon-school-material"></span>
+            <h3>Academics Principle</h3>
+            <p>Academic Principles are fundamental concepts that serve to guide all activities related to education and
+              research. Academic Excellence is a fundamental guiding principle according to which education and research
+              comply with (or even exceed) high quality standards.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-3 mb-lg-0">
+            <span class="icon flaticon-library"></span>
+            <h3>Key of Success</h3>
+            <p>Student Success means the fact that students can meet their expectation in what they get out of
+              learning. Each individual has to want to learn for the university to help. To be motivated to learn and
+              excited to meet their goals in their academic career.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Block -->
+
+    <!-- News  -->
+    <div class="news-updates">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-9 mb-3">
+            <div class="section-heading">
+              <h2 class="text-black">News &amp; Updates</h2>
+              <a href="#">Read All News</a>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="post-entry-big">
+                  <a href="news-single.html" class="img-link"><img src="images/Student Image1.jpg" alt="Image"
+                      class="img-fluid5"></a>
+                  <div class="post-content">
+                    <div class="post-meta">
+                      <a href="#">May 25, 2024</a>
+                      <span class="mx-1">/</span>
+                      <a href="#">Admission</a>, <a href="#">Updates</a>
+                    </div>
+                    <h3 class="post-heading"><a href="news-single.html">Campus Camping and Learning Session</a></h3>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="post-entry-big horizontal d-flex mb-4">
+                  <a href="news-single.html" class="img-link mr-4"><img src="images/Blog3.jpg" alt="Image"
+                      class="img-fluid"></a>
+                  <div class="post-content">
+                    <div class="post-meta">
+                      <a href="#">May 30, 2024</a>
+                      <span class="mx-1">/</span>
+                      <a href="#">Admission</a>, <a href="#">Updates</a>
+                    </div>
+                    <h3 class="post-heading"><a href="news-single.html">Campus Camping and Learning Session</a></h3>
+                  </div>
+                </div>
+                <div class="post-entry-big horizontal d-flex mb-4">
+                  <a href="news-single.html" class="img-link mr-4"><img src="images/Blog4.jpg" alt="Image"
+                      class="img-fluid"></a>
+                  <div class="post-content">
+                    <div class="post-meta">
+                      <a href="#">June 10, 2024</a>
+                      <span class="mx-1">/</span>
+                      <a href="#">Admission</a>, <a href="#">Updates</a>
+                    </div>
+                    <h3 class="post-heading"><a href="news-single.html">Campus Camping and Learning Session</a></h3>
+                  </div>
+                </div>
+                <div class="post-entry-big horizontal d-flex mb-4">
+                  <a href="news-single.html" class="img-link mr-4"><img src="images/Blog5.jpg" alt="Image"
+                      class="img-fluid"></a>
+                  <div class="post-content">
+                    <div class="post-meta">
+                      <a href="#">June 25, 2024</a>
+                      <span class="mx-1">/</span>
+                      <a href="#">Admission</a>, <a href="#">Updates</a>
+                    </div>
+                    <h3 class="post-heading"><a href="news-single.html">Campus Camping and Learning Session</a></h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 mb-3">
+            <div class="section-heading">
+              <h2 class="text-black">Campus Videos</h2>
+              <a href="#">View All Videos</a>
+            </div>
+            <a href="https://vimeo.com/45830194" class="video-1 mb-4" data-fancybox="" data-ratio="2">
+              <span class="play">
+                <span class="icon-play"></span>
+              </span>
+              <img src="images/Video Image1.jpg" alt="Image" class="img-fluid5">
+            </a>
+            <a href="https://vimeo.com/45830194" class="video-1 mb-4" data-fancybox="" data-ratio="2">
+              <span class="play">
+                <span class="icon-play"></span>
+              </span>
+              <img src="images/Video Image2.jpg" alt="Image" class="img-fluid5">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- News  -->
+
+    <!-- Subcribe  -->
+    <div class="site-section ftco-subscribe-1" style="background-image: url('images/bg_1.jpg')">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-7">
+            <h2>Subscribe to us!</h2>
+            <p> A website that offers information about colleges and universities.</p>
+          </div>
+          <div class="col-lg-5">
+            <form action="" class="d-flex">
+              <input type="text" class="rounded form-control mr-2 py-3" placeholder="Enter your email">
+              <button class="btn btn-primary rounded py-3 px-4" type="submit">Send</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Subcribe  -->
+
+    <!-- footer  -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <img src="images/Footer-logo.png" alt="Image" class="img-fluid"></p>
+            <p>The university has a good placement record and hence supports you to have good internship and placement
+              opportunities.</p>
+          </div>
+          <div class="col-lg-3">
+            <a href="https://wa.me/whatsappphonenumber" target="_blank">
+              <img class="footerwhatsapp" src="whatsapp_button_image_url" alt="WhatsApp Button">
+            </a>
+            <h3 class="footer-heading"><span>Our Campus</span></h3>
+            <ul class="list-unstyled">
+              <li><a href="about.html">Acedemic</a></li>
+              <li><a href="about.html">News</a></li>
+              <li><a href="about.html">Our Interns</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h3 class="footer-heading"><span>Our Courses</span></h3>
+            <ul class="list-unstyled">
+              <li><a href="courses.html">Courses</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h3 class="footer-heading"><span>Contact</span></h3>
+            <ul class="list-unstyled">
+              <li><a href="contact.html">Phone no. : 9876543210</a></li>
+              <li><a href="contact.html">Email : sjuniversity@gmail.com</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <div class="copyright">
+              <p>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                Copyright &copy;
+                <script>document.write(new Date().getFullYear());</script> All rights reserved || Sj University </a>
+                <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer  -->
+
+  <!-- loader -->
+  <div id="loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+      <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+      <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+        stroke="#51be78" />
+    </svg></div>
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/jquery-ui.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/bootstrap-datepicker.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/jquery.sticky.js"></script>
+  <script src="js/jquery.mb.YTPlayer.min.js"></script>
+
+  <script src="js/main.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('#myModal').modal('show');
+    }); 
+  </script>
+  <script src="js/form.js"></script>
+
+</body>
+
+</html>

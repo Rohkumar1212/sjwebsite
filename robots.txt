@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:                 
+ErrorDocument 404 /404.html
+Sitemap: https://sjuniversity.com/sitemap.xml

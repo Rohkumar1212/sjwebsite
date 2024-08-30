@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Results || SJ University</title>
+  <meta charset="utf-8">
+  <link rel="icon" href="images/Favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Muli:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/jquery-ui.css">
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+  <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
+  <link rel="stylesheet" href="css/aos.css">
+  <link href="css/jquery.mb.YTPlayer.min.css" media="all" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css">
+  <script href="./Result.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.3.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+  <style>
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+
+      #previewContent,
+      #previewContent * {
+        visibility: visible;
+      }
+
+      #previewContent {
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
+    }
+
+    .Studentpic {
+      display: flex;
+      position: absolute;
+      margin-top: -88px;
+      margin-left: 607px;
+    }
+
+    strong {
+      font-weight: 700;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2;
+    }
+
+    .mark-sheet {
+      width: 80%;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+      border: 1px solid #ddd;
+    }
+
+    th,
+    td {
+      padding: 2px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+
+    .total {
+      margin-top: 20px;
+      text-align: right;
+    }
+  </style>
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+  <div class="site-wrap">
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+    <!-- top header  -->
+    <div class="py-2 bg-light">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-3">
+            <a class="small btn btn-primary px-4 py-2" href="#"><span class="icon-linkedin"></span></a>
+            <a class="small btn btn-primary px-4 py-2" href="#"><span class="icon-facebook"></span></a>
+            <a class="small btn btn-primary px-4 py-2"
+              href="https://api.whatsapp.com/send?phone=9876543210&text=Can%20I%20know%20more%20about%20your%20service.."><span
+                class="icon-whatsapp"></span></a>
+          </div>
+          <div class="col-lg-6 mrq text-right">
+            <marquee>The university has a good placement record and hence supports you to have good internship and
+              placement opportunities.</marquee>
+          </div>
+          <div class="col-lg-3 text-right">
+            <a href="login.html" class="small mr-3"><span class="icon-unlock-alt"></span> Log In</a>
+            <a href="register.html" class="small btn btn-primary px-4 py-2"><span class="icon-users"></span>
+              Register</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header  -->
+    <header class="site-navbar py-1 js-sticky-header site-navbar-target" role="banner">
+      <div class="container height">
+        <div class="d-flex align-items-center height-100%">
+          <div class="site-logo">
+            <a href="index.html" class="d-block">
+              <img src="images/Header-logo.png" alt="Image" class="img-fluid">
+            </a>
+          </div>
+          <div class="mr-auto">
+            <nav class="site-navigation position-relative text-left" role="navigation">
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li>
+                  <a href="index.html" class="nav-link text-left">Home</a>
+                </li>
+                <li>
+                  <a href="about.html" class="nav-link text-left">About Us</a>
+                </li>
+                <li>
+                  <a href="admissions.html" class="nav-link text-left">Admissions</a>
+                </li>
+                <li>
+                  <a href="courses.html" class="nav-link text-left">Courses</a>
+                </li>
+                <li class="active">
+                  <a href="result.html" class="nav-link text-left">Results</a>
+                </li>
+                <li class="has-children">
+                  <a href="verification.html" class="nav-link text-left">Verification</a>
+                  <ul class="dropdown">
+                    <li><a href="email-verification.html">Email</a></li>
+                    <li><a href="rti-verification.html">RTI</a></li>
+                    <li><a href="company-corporate.html">Company/Corporate</a></li>
+                    <li><a href="govt-department.html">Govt Department </a></li>
+                    <li><a href="letter-postal.html">Letter postal</a></li>
+                    <li><a href="foreign.html">Foreign</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="contact.html" class="nav-link text-left">Contact Us</a>
+                </li>
+                <li>
+                  <a href="contact.html" class="nav-link text-left btn btn-success">Call to Action</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="ml-auto">
+            <div class="social-wrap">
+              <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle togglebtn text-black"><span
+                  class="icon-menu h3"></span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- header  -->
+
+      <div class="container fromrj mt-5">
+      <div class="row justify-content-lg-center mt-5">
+        <div class="col-12 col-lg-9">
+          <div class="bg-white border rounded shadow-sm overflow-hidden shadow-lg p-3 mb-5 bg-body rounded">
+            <form id="resultsForm" action="#!">
+              <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
+                <div class="col-6 col-md-4 mt-2">
+                  <label for="registration_number" class="form-label">Registration number </label>
+                </div>
+                <div class="col-12 col-md-6 mt-2 mb-3">
+                  <input type="number" class="form-control" id="registration_number" name="registration_number"
+                    required>
+                </div>
+                <div class="col-6 col-md-4 mt-2">
+                  <label for="rollNumber" class="form-label">Roll number </label>
+                </div>
+                <div class="col-12 col-md-6 mt-2 mb-3">
+                  <input type="number" class="form-control" id="rollNumber" name="rollNumber" required>
+                </div>
+                <div class="col-12">
+                  <div class="d-grid">
+                    <button class="btn btn-primary btn-lg" type="submit">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row justify-content-lg-center">
+        <div class="col-12 col-lg-9">
+          <div class="bg-white border rounded shadow-sm overflow-hidden shadow-lg p-3 mb-5 bg-body rounded">
+            <div id="resultSection">
+              <div id="previewContent"></div>
+              <button id="printBtn" class="btn btn-success mt-3">Print</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+  </div>
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const resultsForm = document.getElementById("resultsForm");
+      const printBtn = document.getElementById("printBtn");
+      const previewContent = document.getElementById("previewContent");
+
+      // Handle form submission to fetch marksheet data
+      resultsForm.addEventListener("submit", async (event) => {
+        event.preventDefault();
+        const formData = new FormData(resultsForm);
+        const registrationNumber = formData.get("registration_number");
+        const rollNumber = formData.get("rollNumber");
+
+        try {
+          const response = await fetch(
+            `http://localhost:5500/api/v1/getMarksheetByStudent/${rollNumber}/${registrationNumber}`
+          );
+          if (response.ok) {
+            const data = await response.json();
+            if (
+              data.data.registration_number === registrationNumber &&
+              data.data.roll_number === rollNumber
+            ) {
+              populatePreview(data.data);
+              previewContent.dataset.data = JSON.stringify(data.data);
+            } else {
+              console.error("Registration number or Roll number does not match.");
+            }
+          } else {
+            console.error("Failed to fetch marksheet data");
+          }
+        } catch (error) {
+          console.error("Error:", error);
+        }
+      });
+
+      // Populate the preview section with fetched data
+      function populatePreview(data) {
+        let subjectsHTML = "";
+        let totalMarksObtained = 0;
+        let maxMarks = 0;
+
+        data.subjects.forEach((subject) => {
+          totalMarksObtained += subject.total_number;
+          maxMarks += subject.max_number;
+          subjectsHTML += `
+            <tr>
+              <td>${subject.code}</td>
+              <td>${subject.subject_details}</td>
+              <td>${subject.year}</td>
+              <td>${subject.session}</td>
+              <td>${subject.max_number}</td>
+              <td>${subject.total_number}</td>
+            </tr>
+          `;
+        });
+
+        const percentage = ((totalMarksObtained / maxMarks) * 100).toFixed(2);
+        const grade = calculateGrade(percentage);
+
+        previewContent.innerHTML = `
+          <div>
+            <h2>${data.universityName}</h2>
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                   <div class="Studentpic">
+                    <p><strong>Student Picture:</strong></p>
+                    <img src="${data.student_pic.picPath}${data.student_pic.picName}" alt="Student Picture" width="100">
+                  </div>
+                  <p><strong>Student Name:</strong> ${data.student_name}</p>
+                  <p><strong>Registration Number:</strong> ${data.registration_number}</p>
+                  <p><strong>Programme:</strong> ${data.programme}</p>
+                  <p><strong>Passing Criteria:</strong> ${data.passing_criteria}</p>
+                  <p><strong>Marksheet Code:</strong> ${data.marksheet_code}</p>
+                </div>
+                <div class="col-md-6">                 
+                  <p><strong>Roll Number:</strong> ${data.roll_number}</p>                  
+                  <p><strong>Percentage:</strong> ${percentage}%</p>
+                  <p><strong>Grade:</strong> ${grade}</p>
+                </div>
+              </div>
+            </div>
+            <table>
+              <thead>
+                <tr>
+                  <th>Subject Code</th>
+                  <th>Subject Name</th>
+                  <th>Year</th>
+                  <th>Session</th>
+                  <th>Max Marks</th>
+                  <th>Marks Obtained</th>
+                </tr>
+              </thead>
+              <tbody>
+                ${subjectsHTML}
+              </tbody>
+            </table>
+            <div class="total">
+              <p><strong>Total Marks Obtained:</strong> ${totalMarksObtained}</p>
+              <p><strong>Max Marks:</strong> ${maxMarks}</p>
+            </div>
+          </div>
+        `;
+      }
+
+      // Print the previewContent section when the print button is clicked
+      printBtn.addEventListener("click", () => {
+        window.print();
+      });
+
+      // Function to calculate grade based on percentage
+      function calculateGrade(percentage) {
+        if (percentage >= 90) return "A+";
+        else if (percentage >= 80) return "A";
+        else if (percentage >= 70) return "B+";
+        else if (percentage >= 60) return "B";
+        else if (percentage >= 50) return "C+";
+        else if (percentage >= 40) return "C";
+        else return "F";
+      }
+    });
+  </script>
+</body>
+
+</html>
